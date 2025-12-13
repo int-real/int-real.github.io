@@ -5,3 +5,5 @@
 <img width="509" height="245" alt="비즈니스 모델" src="https://github.com/user-attachments/assets/86c75976-fa36-4871-9363-27711f394ab2" />
 <img width="509" height="245" alt="프리토타입" src="https://github.com/user-attachments/assets/e3e22954-d4c8-41cb-8589-aa23458b4a11" />
 <img width="509" height="245" alt="설문조사" src="https://github.com/user-attachments/assets/5050e124-70ed-4503-beda-4167491efc4a" />
+<img width="1280" height="720" alt="인트리얼" src="https://github.com/user-attachments/assets/8c94cd0f-0b23-4e32-850b-71f5f8fa002f" />
+<img width="2000" height="1125" alt="9 비즈니스 모델 캔버스" src="https://github.com/user-attachments/assets/d80a3bb7-f5b2-4721-9c03-866d05cb0c55" />
