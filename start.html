@@ -67,10 +67,31 @@
     async function predict() {
         // predict can take in an image, video or canvas html element
         const prediction = await model.predict(webcam.canvas);
+
+		let maxProbability = -1;
+		let maxIndex = -1;
+
+		for(let i =0; i<maxPredictions; i++){
+			if(prediction[i].probability > maxProbability){
+				maxProbability = prediction[i].probability;
+				maxIndex = i;
+			}
+		}
+		
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+			const labelElement = labelContainer.childNodes[i];
             labelContainer.childNodes[i].innerHTML = classPrediction;
+
+			if (i === maxIndex) {
+                labelElement.style.color = "red"; // 빨간색 글씨
+                labelElement.style.fontWeight = "bold"; // 선택적으로 굵게
+            } else {
+                // 이전에 빨간색이었던 것을 다시 검은색(또는 기본색)으로 초기화합니다.
+                labelElement.style.color = "black"; 
+                labelElement.style.fontWeight = "normal";
+            }
         }
     }
 </script>
