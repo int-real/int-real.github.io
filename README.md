@@ -9,3 +9,4 @@
 <img width="2000" height="1125" alt="9 비즈니스 모델 캔버스" src="https://github.com/user-attachments/assets/d80a3bb7-f5b2-4721-9c03-866d05cb0c55" />
 <img width="490" height="233" alt="설문조사 하러가기" src="https://github.com/user-attachments/assets/c76569f2-2c15-4920-991f-e0f6fd191ee7" />
 <img width="509" height="245" alt="About us" src="https://github.com/user-attachments/assets/18394e1d-53e4-4845-b1fa-16ea7b0585d1" />
+<img width="616" height="237" alt="IntReal" src="https://github.com/user-attachments/assets/22e0b479-e2a7-4c08-8526-4cb851148dea" />
