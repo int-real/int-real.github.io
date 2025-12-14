@@ -22,7 +22,6 @@
             z-index: 1000;
             box-sizing: border-box;
             
-            /* 로고(왼쪽)와 그룹(오른쪽)을 분리 배치 */
             display: flex;
             justify-content: space-between; 
             align-items: center; 
@@ -30,22 +29,27 @@
         
         /* 2. right-group-wrapper (오른쪽 내부 Flex 컨테이너) */
         .right-group-wrapper {
-            /* About us와 언어 선택 요소를 수평으로 배치 */
             display: flex;
             align-items: center; 
             gap: 20px; 
         }
-        .header-bar h3 {
+
+        /* 3. h3, h5 마진 제거 (레이아웃 방해 방지) */
+        .header-bar h3, .main-content-wrapper h5 {
             margin: 0;
         }
-        .left-aligned{
-            float: left;
-            margin-right : 80px;
+
+        /* 4. ⭐ 새로운 본문 컨테이너 (이미지 중앙 정렬용) ⭐ */
+        .main-content-wrapper {
+            /* Flexbox로 중앙 정렬 활성화 */
+            display: flex;
+            /* 주축(가로) 중앙 정렬 */
+            justify-content: center; 
+            /* 이미지 사이 간격 (필요에 따라 조정하세요) */
+            gap: 100px; 
         }
-        .right-aligned{
-            float: right;
-            margin-left : 80px;
-        }
+
+        /* 기존의 float 클래스들은 삭제되었거나 무시됩니다. */
     </style>
 </head>
 <body>
@@ -77,10 +81,17 @@
         </div>
     </div>
 
-    <div style="height: 5000px; background-color: #f0f0f0; padding: 20px;">
-        <hr></hr>
-        <h5><a href=start.html><img width="335" height="270" alt="choice" class="left-aligned" src="https://github.com/user-attachments/assets/fcd5b20a-44ea-4150-9479-d243abd841ce" /></a></h5>
-        <h5><img width="335" height="270" alt="recomended" class="right-aligned" src="https://github.com/user-attachments/assets/30f6efde-896f-471d-afc3-ec460bb1e6df" /></h5>
+    <div class="main-content-wrapper" style="height: 5000px; background-color: #f0f0f0; padding: 20px;">
+        <hr>
+        <h5>
+            <a href="start.html">
+                <img width="335" height="270" alt="choice" src="https://github.com/user-attachments/assets/fcd5b20a-44ea-4150-9479-d243abd841ce" />
+            </a>
+        </h5>
+        
+        <h5>
+            <img width="335" height="270" alt="recomended" src="https://github.com/user-attachments/assets/30f6efde-896f-471d-afc3-ec460bb1e6df" />
+        </h5>
     </div>
 </body>
 </html>
