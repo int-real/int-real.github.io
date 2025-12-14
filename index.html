@@ -1,59 +1,78 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <style>
-  <meta charset = "UTF-8">
-  <title>Int-Real AI기반 3D 가상 인테리어</title>
-  <link rel = "stylesheet" href="styles.css">
-        .left-aligned {
-            float: left;
-        }     
-        .right-aligned {
-            float: right;
+    <meta charset="UTF-8">
+    <title>Int-Real AI기반 3D 가상 인테리어</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            padding-top: 80px; 
+            margin: 0;
         }
-	  .right-aligned-group{
-		  float: right;
-		  display: flex;
-		  align-items: center;
-		  heigth: 100%;
-	  }
-	  .header-bar{
-		  position: fixed;
-		  top: 0;
-		  left: 0;
-		  width: 100%;
-		  background-color: #ffffff;
-		  padding: 10px 20px;
-		  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-		  z-index: 1000;
-		  box-sizing: border-box;
-		  display: flow-root;
-	  }
-	  body{
-		  padding-top: 80px;
-		  margin: 0;
-	  }
-  </style>
+
+        /* 1. header-bar (메인 Flex 컨테이너) */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            box-sizing: border-box;
+            
+            /* 로고(왼쪽)와 그룹(오른쪽)을 분리 배치 */
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        
+        /* 2. right-group-wrapper (오른쪽 내부 Flex 컨테이너) */
+        .right-group-wrapper {
+            /* About us와 언어 선택 요소를 수평으로 배치 */
+            display: flex;
+            align-items: center; 
+            gap: 20px; 
+        }
+        
+        .header-bar h3 {
+            margin: 0;
+        }
+        
+    </style>
 </head>
 <body>
-	<div class="header-bar">
-        <span class="left-aligned"> 
-			<h3> <img width="500" height="auto" alt="IntReal" src="https://github.com/user-attachments/assets/22e0b479-e2a7-4c08-8526-4cb851148dea" /></h3>
-		</span>
-		
-        <span class="right-aligned-group">
-			<span class="right-aligned">
-				<h3> <a href="introduction.html"> <img width="150" height="auto" alt="About us" src="https://github.com/user-attachments/assets/18394e1d-53e4-4845-b1fa-16ea7b0585d1" /> </a> </h3>
-			</span>
-			<span class="right-aligned">
-				<label for="language select">언어 선택</label>
-    			<select id="user-color">
-        			<option value="korea">한국어</option>
-        			<option value="english">English</option>
-				</select>
-			</span>
-		</span>
-	</div>
-	<div style="height: 5000px; background-color: #f0f0f0; padding: 20px;">
-	</div>
+    <div class="header-bar">
+        
+        <div>
+            <h3>
+                <img width="500" height="auto" alt="IntReal" src="https://github.com/user-attachments/assets/22e0b479-e2a7-4c08-8526-4cb851148dea" />
+            </h3>
+        </div>
+        
+        <div class="right-group-wrapper">
+            
+            <div>
+                <h3>
+                    <a href="introduction.html">
+                        <img width="150" height="auto" alt="About us" src="https://github.com/user-attachments/assets/18394e1d-53e4-4845-b1fa-16ea7b0585d1" />
+                    </a>
+                </h3>
+            </div>
+            
+            <div>
+                <label for="user-color">언어 선택</label>
+                <select id="user-color">
+                    <option value="korea">한국어</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 5000px; background-color: #f0f0f0; padding: 20px;">
+        여기는 본문 내용입니다.
+    </div>
 </body>
 </html>
