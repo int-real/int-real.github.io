@@ -36,20 +36,22 @@
 
         /* 3. h3, h5 마진 제거 (레이아웃 방해 방지) */
         .header-bar h3, .main-content-wrapper h5 {
-            margin: 0;
+            margin: 0; /* ⭐ 이 부분이 중앙 정렬을 완성합니다. ⭐ */
         }
 
         /* 4. 새로운 본문 컨테이너 (이미지 중앙 정렬용) */
         .main-content-wrapper {
-            /* Flexbox로 중앙 정렬 활성화 */
             display: flex;
-            /* 주축(가로) 중앙 정렬 */
             justify-content: center; 
-            /* 이미지 사이 간격 (필요에 따라 조정하세요) */
             gap: 100px; 
         }
+        
+        /* 수평선 디자인 (선택 사항) */
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+        }
 
-        /* 기존의 float 클래스들은 삭제되었거나 무시됩니다. */
     </style>
 </head>
 <body>
