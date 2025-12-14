@@ -10,3 +10,5 @@
 <img width="490" height="233" alt="설문조사 하러가기" src="https://github.com/user-attachments/assets/c76569f2-2c15-4920-991f-e0f6fd191ee7" />
 <img width="509" height="245" alt="About us" src="https://github.com/user-attachments/assets/18394e1d-53e4-4845-b1fa-16ea7b0585d1" />
 <img width="616" height="237" alt="IntReal" src="https://github.com/user-attachments/assets/22e0b479-e2a7-4c08-8526-4cb851148dea" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/686365ba-a831-4c78-9446-df235c4f82b1" />
+<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/703a78f2-8a9d-43c1-966d-d9fc8ef43290" />
