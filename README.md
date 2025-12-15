@@ -15,4 +15,3 @@
 <img width="484" height="221" alt="초기 프리토타입 영상" src="https://github.com/user-attachments/assets/d9bb4bbe-6186-48dd-bcbe-1b841af2500c" />
 <img width="509" height="245" alt="회원 요금제" src="https://github.com/user-attachments/assets/6ce3bd9a-92d2-4f0f-851d-5310acf2b8bf" />
 <img width="497" height="520" alt="회원 요금제 세부 사항" src="https://github.com/user-attachments/assets/cef1de91-7834-4a75-bc49-56361d6f7d37" />
-
