@@ -17,8 +17,18 @@
     <script src="script.js"></script>
     <div><h3>Teachable Machine Image Model</h3></div>
 <button type="button" onclick="init()">Start</button>
-<div id="webcam-container"></div>
-<div id="label-container"></div>
+<div id="main-content-container" style="display: flex; justify-content: space-around; margin-top: 20px;"> 
+        <div id="classification-area" style="text-align: center;">
+            <div id="webcam-container"></div>
+            <div id="label-container"></div>
+        </div>
+        
+        <div id="recommendation-area" style="text-align: center; width: 400px; padding: 10px; border: 1px solid #ccc;">
+            <h3>추천 가구</h3>
+            <div id="furniture-name" style="font-weight: bold; margin-bottom: 10px;">스타일을 분류하면 추천 가구가 나타납니다.</div>
+            <img id="furniture-image" src="" alt="추천 가구 이미지" style="max-width: 100%; height: auto; display: none; border: 1px solid #eee;"/>
+        </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 <script type="text/javascript">
