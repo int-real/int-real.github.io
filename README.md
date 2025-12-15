@@ -13,4 +13,5 @@
 <img width="335" height="270" alt="choice" src="https://github.com/user-attachments/assets/fcd5b20a-44ea-4150-9479-d243abd841ce" />
 <img width="335" height="270" alt="recomended" src="https://github.com/user-attachments/assets/30f6efde-896f-471d-afc3-ec460bb1e6df" />
 <img width="484" height="221" alt="초기 프리토타입 영상" src="https://github.com/user-attachments/assets/d9bb4bbe-6186-48dd-bcbe-1b841af2500c" />
+<img width="509" height="245" alt="회원 요금제" src="https://github.com/user-attachments/assets/6ce3bd9a-92d2-4f0f-851d-5310acf2b8bf" />
 
