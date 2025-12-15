@@ -28,6 +28,85 @@
     // the link to your model provided by Teachable Machine export panel
     const URL = "./my_model/";
 
+	const furnitureData = {
+    "southwestern": {
+        name: "사우스웨스턴 패턴 러그",
+        image: "https://github.com/user-attachments/assets/2edf58e9-a7dd-4840-aa13-07877ea19c12"
+    },
+    "shabby-chic": {
+        name: "쉐비 시크 빈티지 화이트 의자",
+        image: "https://github.com/user-attachments/assets/d800891a-6248-450f-a0f4-cbf919afdb86"
+    },
+    "scandinavian": {
+        name: "스칸디나비아 원목 암체어",
+        image: "https://github.com/user-attachments/assets/9673f136-c046-4083-acd8-cb9a89e077ef"
+    },
+    "rustic": {
+        name: "러스틱 스타일 통나무 테이블",
+        image: "https://github.com/user-attachments/assets/ffda89e3-ec98-4615-bcaa-400b1cd3afe0"
+    },
+    "modern": {
+        name: "모던 심플 디자인 소파",
+        image: "https://github.com/user-attachments/assets/28bcc09d-2d2c-4f14-8914-cb7294371009"
+    },
+    "midterranean": {
+        name: "지중해풍 타일 무늬 화분",
+        image: "https://github.com/user-attachments/assets/fe689c15-b185-424c-914b-5f51887a2df6"
+    },
+    "mid-century": {
+        name: "미드 센추리 모던 사이드보드",
+        image: "https://github.com/user-attachments/assets/bd35dc95-8575-46ad-8d05-2f0548415db2"
+    },
+    "industrial": {
+        name: "인더스트리얼 메탈 펜던트 조명",
+        image: "https://github.com/user-attachments/assets/33cf111f-291b-44b5-bd0b-6cfbd894b9c7"
+    },
+    "french": {
+        name: "프렌치 스타일 샹들리에",
+        image: "https://github.com/user-attachments/assets/25bc6c49-b3d5-4fff-9bbe-104ff4c514d2"
+    },
+    "farmhouse": {
+        name: "팜하우스 스타일 나무 식탁",
+        image: "https://github.com/user-attachments/assets/4fac3f9c-bf6a-4ab3-900a-9b969f639666"
+    },
+    "electric": {
+        name: "일렉트릭 네온 사인 조명",
+        image: "https://github.com/user-attachments/assets/dba4085d-d026-4348-af2e-bcca09595bef"
+    },
+    "craftsman": {
+        name: "크래프츠맨 수제 책장",
+        image: "https://github.com/user-attachments/assets/5294f5f3-3044-4174-886a-c0419c8590e0"
+    },
+    "contemporary": {
+        name: "컨템포러리 추상화 액자",
+        image: "https://github.com/user-attachments/assets/74e42820-3ff5-497e-ba1b-d943810c6be5"
+    },
+    "coastal": {
+        name: "코스탈 스타일 푸른색 쿠션",
+        image: "https://github.com/user-attachments/assets/8d564435-7bcc-4119-a142-8d11d0b59822"
+    },
+    "asia": {
+        name: "아시아풍 대나무 발",
+        image: "https://github.com/user-attachments/assets/83cca033-2981-4c4f-9172-ab8e0a89cf50"
+    },
+    "victorian": {
+        name: "빅토리아 시대 양식 거울",
+        image: "https://github.com/user-attachments/assets/b9d24047-4a75-4cd3-aa0b-3d34e4e40936"
+    },
+    "tropical": {
+        name: "트로피컬 야자수 화분",
+        image: "https://github.com/user-attachments/assets/aefcdeac-bacb-4f8d-94c4-22df46218eae"
+    },
+    "transitional": {
+        name: "트랜지셔널 조합형 테이블 램프",
+        image: "https://github.com/user-attachments/assets/9f1a956f-a802-4032-8dfd-64561f5352b8"
+    },
+    "traditional": {
+        name: "전통 클래식 원목 책상",
+        image: "https://github.com/user-attachments/assets/84c93334-4814-4121-88c6-0420ac45c057"
+    }
+};
+	
     let model, webcam, labelContainer, maxPredictions;
 
     // Load the image model and setup the webcam
@@ -75,6 +154,7 @@
 			if(prediction[i].probability > maxProbability){
 				maxProbability = prediction[i].probability;
 				maxIndex = i;
+				maxClassName = prediction[i].className;
 			}
 		}
 		
@@ -93,6 +173,22 @@
                 labelElement.style.fontWeight = "normal";
             }
         }
+
+		const furnitureNameElement = document.getElementById("furniture-name");
+    	const furnitureImageElement = document.getElementById("furniture-image");
+
+    	if (maxClassName && furnitureData[maxClassName]) {
+        	const recommendedFurniture = furnitureData[maxClassName];
+        
+        	furnitureNameElement.innerHTML = `⭐ ${maxClassName} 스타일 추천: **${recommendedFurniture.name}**`;
+        	furnitureImageElement.src = recommendedFurniture.image;
+        	furnitureImageElement.style.display = "block"; // 이미지 표시
+    		} else {
+        		// 데이터가 없는 경우 
+        		furnitureNameElement.innerHTML = "해당 스타일의 추천 가구 데이터가 없습니다.";
+        		furnitureImageElement.src = "";
+        		furnitureImageElement.style.display = "none";
+		}
     }
 </script>
 
