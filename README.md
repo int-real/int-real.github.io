@@ -1,11 +1,11 @@
 # int-real.github.io
 <img width="1280" height="1280" alt="화살표" src="https://github.com/user-attachments/assets/91fd9e9c-60f0-4510-bc7d-38d602f9c06a" />
-<img width="435" height="199" alt="팀 소개" src="https://github.com/user-attachments/assets/f77b3fd3-87af-4ae4-ba9c-78c366e04fac" />
+<img width="509" height="245" alt="팀 소개" src="https://github.com/user-attachments/assets/8bb9eb8f-9049-494f-84d1-9114646337f1" />
 <img width="509" height="245" alt="사업계획서" src="https://github.com/user-attachments/assets/0e642bdc-ae0c-4177-bc5b-52b85ff74731" />
 <img width="509" height="245" alt="비즈니스 모델" src="https://github.com/user-attachments/assets/86c75976-fa36-4871-9363-27711f394ab2" />
 <img width="509" height="245" alt="프리토타입" src="https://github.com/user-attachments/assets/e3e22954-d4c8-41cb-8589-aa23458b4a11" />
 <img width="509" height="245" alt="설문조사" src="https://github.com/user-attachments/assets/5050e124-70ed-4503-beda-4167491efc4a" />
-<img width="435" height="199" alt="팀 소개" src="https://github.com/user-attachments/assets/f77b3fd3-87af-4ae4-ba9c-78c366e04fac" />
+<img width="435" height="199" alt="팀 소개 사진" src="https://github.com/user-attachments/assets/f77b3fd3-87af-4ae4-ba9c-78c366e04fac" />
 <img width="2000" height="1125" alt="9 비즈니스 모델 캔버스" src="https://github.com/user-attachments/assets/d80a3bb7-f5b2-4721-9c03-866d05cb0c55" />
 <img width="490" height="233" alt="설문조사 하러가기" src="https://github.com/user-attachments/assets/c76569f2-2c15-4920-991f-e0f6fd191ee7" />
 <img width="509" height="245" alt="About us" src="https://github.com/user-attachments/assets/18394e1d-53e4-4845-b1fa-16ea7b0585d1" />
