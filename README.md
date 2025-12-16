@@ -35,4 +35,6 @@
 ![transitional](https://github.com/user-attachments/assets/9f1a956f-a802-4032-8dfd-64561f5352b8)
 ![traditional](https://github.com/user-attachments/assets/84c93334-4814-4121-88c6-0420ac45c057)
 <img width="509" height="245" alt="사업계획서" src="https://github.com/user-attachments/assets/b4b5cd04-c773-487c-a50c-9fcae42f9dfc" />
-<img width="1024" height="1024" alt="Gemini_Generated_Image_sryp06sryp06sryp" src="https://github.com/user-attachments/assets/26f352c5-b6d7-4fa7-95e4-9e8cb6e844ba" />
+<img width="1024" height="1024" alt="Gemini_Generated_Image_sryp06sryp06sryp" src="https://github.com/user-attachme<img width="182" height="177" alt="ㅃㅃ" src="https://github.com/user-attachments/assets/f3aeabe2-090c-4ef9-8e6a-33b372fb3662" />
+nts/assets/26f352c5-b6d7-4fa7-95e4-9e8cb6e844ba" />
+<img width="174" height="180" alt="프리미" src="https://github.com/user-attachments/assets/db593a00-f49c-416b-bf9e-a8ffa4536aad" />
